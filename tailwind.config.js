@@ -251,7 +251,6 @@ module.exports = {
     },
     fontFamily: {
       playfair: ['"Playfair Display"', 'serif'],
-      
       pinyon: ['"Pinyon Script"', 'cursive'],
       sans: [
         'ui-sans-serif',
@@ -522,6 +521,8 @@ module.exports = {
     },
     margin: (theme, { negative }) => ({
       auto: 'auto',
+      full: '100%',
+      fullN: '-100%',
       ...theme('spacing'),
       ...negative(theme('spacing')),
     }),
